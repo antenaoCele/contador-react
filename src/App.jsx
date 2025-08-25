@@ -8,10 +8,14 @@ function App() {
 
   return (
     <>
-      <div className="card">
+      <div className="contador">
         <h1>CONTADOR</h1>
         <button onClick={() => setCount((count) => count + 1)}>
-          {count}
+          Sumar
+        </button>
+        <h1>{count}</h1>
+        <button onClick={() => setCount((count) => count > 0 ? count - 1 : 0)}>
+          Restar
         </button>
       </div>
     </>
